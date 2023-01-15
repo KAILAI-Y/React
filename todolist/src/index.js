@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// APP component
+
 import TodoList from './TodoList';
+import './style.css';
+
 import reportWebVitals from './reportWebVitals'; 
 
 // ReactDOM.render(<TodoList />, document.getElementById('root'));
