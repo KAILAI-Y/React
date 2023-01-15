@@ -1,4 +1,5 @@
 import React from "react";
+import TodoItem from "./TodoItem";
 
 class TodoList extends React.Component {
   //初始化
@@ -27,7 +28,16 @@ class TodoList extends React.Component {
     })
   }
 
-  handleItemClick(index){
+  // handleItemClick(index){
+  //   //copy list
+  //   const list = [...this.state.list];
+  //   //delete
+  //   list.splice(index, 1);
+  //   //alter to new list
+  //   this.setState({list})
+  // }
+
+  handleDelete(index){
     //copy list
     const list = [...this.state.list];
     //delete
@@ -48,7 +58,8 @@ class TodoList extends React.Component {
             //map() - loop over the elements in an array
             //Loop through the data inside the list, returning <li> for each data
             this.state.list.map((item, index) => {
-              return <li key={index} onClick = {this.handleItemClick.bind(this)}>{item}</li>
+              return <TodoItem delete = {this.handleDelete.bind(this)} key = {index} content = {item} index={index}/>
+              // return <li key={index} onClick = {this.handleItemClick.bind(this)}>{item}</li>
             })
           }
         </ul>
