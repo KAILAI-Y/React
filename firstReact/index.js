@@ -1,37 +1,5 @@
-// const h1 = document.createElement("h1")
-// h1.textContent = "Hello world"
-// h1.className = "header"
-// console.log(h1)
-//<h1 class="header">Hello world</h1>
-
-// const element = <h1 className = "header"> This is JSX</h1>
-// console.log(element)
-
-/*
-{
-    type: "h1", 
-    key: null, 
-    ref: null, 
-    props: {className: "header", children: "This is JSX"},
-    _owner: null, 
-    _store: {}
-}
- */
-
-
-// const page = (
-//     <div>
-//         <h1 className="header">This is JSX</h1>
-//         <p>This is a paragraph</p>
-//     </div>
-// )
-
-// //JSX
-// ReactDOM.render(
-//     page, 
-//     document.getElementById("root")
-//     )
-
+import React from "react"
+import ReactDOM from "react-dom"
 
 const navbar = (
     <nav>
@@ -44,8 +12,13 @@ const navbar = (
     </nav>
 )
 
-ReactDOM.render(
-    navbar,
-    document.getElementById("root")
-)
+const root = ReactDOM.createRoot(document.getElementById("root"))
+root.render(navbar)
 
+
+// ReactDOM.render(
+//     navbar,
+//     document.getElementById("root")
+// )
+
+ReactDOM.createRoot(document.getElementById("root")).render(navbar)
