@@ -1,13 +1,17 @@
-function MainContent(){
-    return(
-        <h1>I'm learning React!</h1>
-    )
-}
+// ReactDOM.render(<h1>Hello, React!</h1>, document.getElementById("root"))
 
-ReactDOM.render(
-    <div>
-        <MainContent />
-    </div>
+/* 
+Challenge - recreate the above line of code in vanilla JS by creating and
+appending an h1 to our div#root (without using innerHTML).
 
-)
+- Create a new h1 element
+- Give it some textContent
+- Give it a class name of "header"
+- append it as a child of the div#root
+    
+*/
 
+const h1 = document.createElement("h1")
+h1.textContent = "This is an imperative way to program"
+h1.className = "header"
+document.getElementsById("root").append(h1)
