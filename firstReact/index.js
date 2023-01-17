@@ -1,24 +1,17 @@
 import React from "react"
 import ReactDOM from "react-dom"
+import Header from "./Header"
+import Footer from "./Footer"
+import MainContent from "./MainContent"
 
-const navbar = (
-    <nav>
-        <h1>Bob's Bistro </h1>
-        <ul>
-            <li>Menu</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
-)
+function App() {
+    return (
+        <div>
+            <Header /> 
+            <MainContent />
+            <Footer />
+        </div>
+    )
+}
 
-const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(navbar)
-
-
-// ReactDOM.render(
-//     navbar,
-//     document.getElementById("root")
-// )
-
-ReactDOM.createRoot(document.getElementById("root")).render(navbar)
+ReactDOM.render(<App />, document.getElementById("root"))
