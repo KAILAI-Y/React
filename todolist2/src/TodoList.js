@@ -51,6 +51,9 @@ class TodoList extends Component{
         console.log('shouldComponentUpdate');
         return true;
     }
+    componentWillUnmount(){
+        console.log('componentWillUnmount');
+    }
 
     
 
