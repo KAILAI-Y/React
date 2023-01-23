@@ -1,7 +1,8 @@
 import React, { Component, Fragment} from "react";
 import './style.css';
 import TodoItem from "./TodoItem";
-import Test from "./Test";
+import axios from 'axios';
+// import Test from "./Test";
 
 class TodoList extends Component{
     constructor(props){
@@ -15,11 +16,6 @@ class TodoList extends Component{
         this.handleItemDelete = this.handleItemDelete.bind(this);
     }
 
-
-    componentWillMount(){
-        console.log('compunentWillMount')
-    }
-
     render(){
         return(
             <Fragment>
@@ -30,32 +26,29 @@ class TodoList extends Component{
                         className="input"
                         value={this.state.inputValue}
                         onChange={this.handleInputChange}
-                        ref={(input) => {this.input = input}}
                     />
                     <button onClick={this.handleButtonClick}>Add</button>
                 </div>
                 <ul ref={(ul) => (this.ul = ul)}>
                     {this.getTodoItem()}
                 </ul>
-                <Test content= {this.state.inputValue}/>
+                {/* <Test content= {this.state.inputValue}/> */}
             </Fragment>
             
         )
-    }
+    }    
 
     componentDidMount(){
-        console.log('compunentDidMount');
+        axios.get('/api/todolist2')
+        .then((res) => {console.log(res.data);
+            this.setState(() => {
+                return{
+                    list: res.data
+                }
+            })
+        })
+        .catch(() =>{alert('error')})
     }
-
-    shouldComponentUpdate(){
-        console.log('shouldComponentUpdate');
-        return true;
-    }
-    componentWillUnmount(){
-        console.log('componentWillUnmount');
-    }
-
-    
 
     getTodoItem(){
       return this.state.list.map((item, index) => {
@@ -76,8 +69,8 @@ class TodoList extends Component{
 
     }
 
-    handleInputChange(){
-      const value = this.input.value;
+    handleInputChange(e){
+      const value = e.target.value;
       this.setState(() => ({
           inputValue: value
       }));
