@@ -15,6 +15,11 @@ class TodoList extends Component{
         this.handleItemDelete = this.handleItemDelete.bind(this);
     }
 
+
+    componentWillMount(){
+        console.log('compunentWillMount')
+    }
+
     render(){
         return(
             <Fragment>
@@ -37,6 +42,17 @@ class TodoList extends Component{
             
         )
     }
+
+    componentDidMount(){
+        console.log('compunentDidMount');
+    }
+
+    shouldComponentUpdate(){
+        console.log('shouldComponentUpdate');
+        return true;
+    }
+
+    
 
     getTodoItem(){
       return this.state.list.map((item, index) => {
@@ -67,11 +83,8 @@ class TodoList extends Component{
     handleButtonClick(){
         this.setState((prevState) => ({
           list: [...prevState.list, prevState.inputValue],
-            inputValue: ''
-        }), () =>{
-            console.log(this.ul.querySelectorAll('div'), length);
-        
-        });
+            inputValue: ''      
+        }));
     }
 
     handleItemDelete(index){

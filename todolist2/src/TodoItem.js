@@ -19,7 +19,7 @@ class TodoItem extends Component{
     handleClick(){
         const { deleteItem, index }= this.props;
         deleteItem(index);    
-    }
+    }    
 }
 
 TodoItem.propTypes = {
