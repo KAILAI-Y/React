@@ -1,12 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React, { Fragment } from 'react';
+import ReactDOM from 'react-dom';
+import { GlobalStyle } from "./style";
 import App from './App';
 import './style.js';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+ReactDOM.render(
+    <Fragment>
+      <GlobalStyle />
+      <App />
+    </Fragment>,
+    document.getElementById('root')
 );
 
