@@ -2,16 +2,32 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 
-const img = 'https://m.media-amazon.com/images/I/81bGKUa1e0L._SL1500_.jpg'
-const author = 'James Clear'
-const title =
-  'Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones'
+const firstBook = {
+  author: ' Michael Lewis',
+  title: 'Going Infinite: The Rise and Fall of a New Tycoon',
+  img: 'https://m.media-amazon.com/images/I/81LUGiJk5iL._SL1500_.jpg',
+}
+
+const secondBook = {
+  author: 'James Clear',
+  title:
+    'Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones',
+  img: 'https://m.media-amazon.com/images/I/81bGKUa1e0L._SL1500_.jpg',
+}
 
 const BookList = () => {
   return (
     <section className="booklist">
-      <Book author={author} title={title} img={img} />
-      <Book title={title} img={img} />
+      <Book
+        img={firstBook.img}
+        title={firstBook.title}
+        author={firstBook.author}
+      />
+      <Book
+        img={secondBook.img}
+        title={secondBook.title}
+        author={secondBook.author}
+      />
     </section>
   )
 }
