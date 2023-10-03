@@ -25,8 +25,21 @@ npm start
   ```
 
 - Components
+
   - start with CAPITAL LETTER
   - must return JSX
     - group element: ` <React.Fragment></React.Fragment>`
       `<></> `
     - className instead of class
+    - {} going back to JS
+    - style={{ color:'#eee' }}
+
+- images
+
+  - external: url
+  - local public/src folder
+
+- props
+  - pass key/value pairs
+
+https://github.com/john-smilga/react-course-v3/tree/main/01-fundamentals
