@@ -40,6 +40,11 @@ npm start
   - local public/src folder
 
 - props
+
   - pass key/value pairs
+
+- Build Production Application
+  - run `npm run build`
+- Netlify
 
 https://github.com/john-smilga/react-course-v3/tree/main/01-fundamentals

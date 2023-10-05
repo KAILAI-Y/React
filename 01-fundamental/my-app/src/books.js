@@ -2,7 +2,7 @@ import img1 from './img/img1.jpg'
 import img2 from './img/img2.jpg'
 import img3 from './img/img3.jpg'
 
-const books = [
+export const books = [
   {
     author: 'Michael Lewis',
     title: 'Going Infinite: The Rise and Fall of a New Tycoon',
@@ -22,5 +22,3 @@ const books = [
     id: 3,
   },
 ]
-
-export default books
