@@ -1,6 +1,10 @@
 .navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 4rem;
-  background-color: #eee;
+  width: 100%;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,20 +28,32 @@
 .nav_links {
   display: flex;
   align-items: center;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .nav_links li {
   display: flex;
   align-items: center;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .nav_link {
   display: flex;
   align-items: center;
   height: 100%;
-  padding: 0 10px;
+  padding: 1rem 2rem;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+  color: var(--clr-grey-1);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.nav_link:hover {
+  color: var(--clr-primary-1);
+  /* background: var(--clr-primary-8); */
+  padding-left: 2.25rem;
 }
 
 .nav_icons {
@@ -47,6 +63,12 @@
 .nav_icon {
   display: flex;
   align-items: center;
-  height: 4rem;
-  padding: 0 10px;
+  margin-right: 0.7rem;
+  color: var(--clr-primary-5);
+  font-size: 1.2rem;
+  transition: var(--transition);
+}
+
+.nav_icon:hover {
+  color: var(--clr-primary-8);
 }
