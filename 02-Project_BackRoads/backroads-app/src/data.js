@@ -42,7 +42,7 @@ export const tours = [
   {
     id: 1,
     image: tour1,
-    date: 'august 26th, 2020',
+    date: 'August 26th, 2020',
     title: 'Tibet Adventure',
     info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.',
     location: 'china',
@@ -52,7 +52,7 @@ export const tours = [
   {
     id: 2,
     image: tour2,
-    date: 'august 26th, 2020',
+    date: 'August 26th, 2020',
     title: 'Tibet Adventure',
     info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.',
     location: 'china',
@@ -62,7 +62,7 @@ export const tours = [
   {
     id: 3,
     image: tour3,
-    date: 'august 26th, 2020',
+    date: 'August 26th, 2020',
     title: 'Tibet Adventure',
     info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.',
     location: 'china',
@@ -72,7 +72,7 @@ export const tours = [
   {
     id: 4,
     image: tour4,
-    date: 'august 26th, 2020',
+    date: 'August 26th, 2020',
     title: 'Tibet Adventure',
     info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.',
     location: 'china',

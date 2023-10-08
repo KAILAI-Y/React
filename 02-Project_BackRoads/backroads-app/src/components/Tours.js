@@ -1,36 +1,35 @@
 import React from 'react'
 import Title from './Title'
 import { tours } from '../data'
+import styles from './Tour.module.css'
 
 const Tours = () => {
   return (
-    <section className="section" id="tours">
+    <section className={styles.section} id="tours">
       <Title title="featured" subTitle="tours" />
 
-      <div className="section-center featured-center">
+      <div className={`${styles.section_center} ${styles.featured_center}`}>
         {tours.map((tour) => {
           const { id, image, date, title, info, location, duration, cost } =
             tour
           return (
-            <article className="tour-card" key={id}>
-              <div className="tour-img-container">
-                <img src={image} className="tour-img" alt="" />
-                <p className="tour-date">{date}</p>
+            <article className={styles.tour_card} key={id}>
+              <div className={styles.tour_img_container}>
+                <img src={image} className={styles.tour_img} alt="" />
+                <p className={styles.tour_date}>{date}</p>
               </div>
-              <div className="tour-info">
-                <div className="tour-title">
+              <div className={styles.tour_info}>
+                <div className={styles.tour_title}>
                   <h4>{title}</h4>
                 </div>
-                <p>{info}</p>
-                <div className="tour-footer">
-                  <p>
-                    <span>
-                      <i className="fas fa-map"></i>
-                    </span>
-                    {location}
-                  </p>
-                  <p>{duration}</p>
-                  <p>from ${cost}</p>
+                <p className={styles.tour_info_desc}>{info}</p>
+                <div className={styles.tour_footer}>
+                  <div>
+                    <i className="fas fa-map"></i>
+                    <div className={styles.tour_footer_loc}>{location}</div>
+                  </div>
+                  <div>{duration} Days</div>
+                  <div>From ${cost}</div>
                 </div>
               </div>
             </article>

@@ -1,0 +1,32 @@
+.section {
+  height: 356px;
+  padding: 60px 0;
+  background-color: rgb(242, 245, 248);
+}
+.section_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service {
+  display: flex;
+}
+.service_icon {
+  position: relative;
+  width: 55px;
+  height: 64px;
+  background-color: rgb(86, 172, 184);
+}
+.service_icon i {
+  position: absolute;
+  top: 16px;
+  left: 8px;
+  font-size: 32px;
+  color: rgb(31, 77, 82);
+}
+
+.service_info {
+  width: 310px;
+  margin: 0 16px;
+}
