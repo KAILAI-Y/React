@@ -1,8 +1,8 @@
-import FetchData from './JSX/FetchData'
+import MultipleReturnBasics from './JSX/MultipleReturnBasics'
 import './App.css'
 
 const App = () => {
-  return <FetchData />
+  return <MultipleReturnBasics />
 }
 
 export default App
