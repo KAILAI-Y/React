@@ -1,8 +1,8 @@
-import UseStateGotcha from './JSX/UseStateGotcha'
+import UseEffectBasic from './JSX/UseEffectBasic'
 import './App.css'
 
 const App = () => {
-  return <UseStateGotcha />
+  return <UseEffectBasic />
 }
 
 export default App
