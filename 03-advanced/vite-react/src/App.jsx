@@ -1,8 +1,8 @@
-import MultipleReturnBasics from './JSX/MultipleReturnBasics'
+import ShortCircuit from './JSX/ShortCircuit'
 import './App.css'
 
 const App = () => {
-  return <MultipleReturnBasics />
+  return <ShortCircuit />
 }
 
 export default App
