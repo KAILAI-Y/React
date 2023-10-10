@@ -1,8 +1,8 @@
-import ShortCircuit from './JSX/ShortCircuit'
+import ToggleChallenge from './JSX/ToggleChallenge'
 import './App.css'
 
 const App = () => {
-  return <ShortCircuit />
+  return <ToggleChallenge />
 }
 
 export default App
