@@ -1,8 +1,8 @@
-import ToggleChallenge from './JSX/ToggleChallenge'
+import Cleanup from './JSX/Cleanup'
 import './App.css'
 
 const App = () => {
-  return <ToggleChallenge />
+  return <Cleanup />
 }
 
 export default App
