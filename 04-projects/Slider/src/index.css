@@ -1,7 +1,7 @@
 .slider-container {
   margin: 0 auto;
   margin-top: 10rem;
-  width: 80%;
+  width: 80vw;
   max-width: 800px;
   position: relative;
   height: 450px;
@@ -99,4 +99,25 @@
 
 .next-slide {
   transform: translateX(200%);
+}
+
+/* =========== Slick ========== */
+.slick-container {
+  margin: 0 auto;
+  margin-top: 10rem;
+  width: 80vw;
+  max-width: 800px;
+  text-align: center;
+}
+
+.slick-slide img {
+  display: inline-block;
+}
+
+.slick-prev::before {
+  color: #8b5cf6 !important;
+}
+
+.slick-next::before {
+  color: #8b5cf6 !important;
 }

@@ -1,11 +1,13 @@
 import React from 'react'
 
 import Carousel from './Carousel.jsx'
+import SlickCarousel from './SlickCarousel.jsx'
 
 const App = () => {
   return (
     <main>
-      <Carousel />
+      {/* <Carousel /> */}
+      <SlickCarousel />
     </main>
   )
 }
