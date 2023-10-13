@@ -12,6 +12,10 @@ const SlickCarousel = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    // fade: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    pauseOnHover: true,
   }
   return (
     <section className="slick-container">
