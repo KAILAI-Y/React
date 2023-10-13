@@ -5,7 +5,7 @@
   max-width: 800px;
   position: relative;
   height: 450px;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .slide {
@@ -95,4 +95,8 @@
     height: 2rem;
     font-size: 1.5rem;
   }
+}
+
+.next-slide {
+  transform: translateX(200%);
 }
