@@ -1,0 +1,67 @@
+.section-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  max-width: 400rem;
+  margin: 10rem auto;
+}
+
+.section-center h4 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.lorem-form {
+  text-transform: capitalize;
+  letter-spacing: 2;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lorem-form label {
+  font-size: 1.25rem;
+}
+
+.lorem-form input {
+  padding: 0.25rem 0.5rem;
+  width: 4rem;
+  border-radius: 0.25rem;
+  border-color: transparent;
+  background: #cbd5e1;
+  font-size: 1.25rem;
+}
+
+.lorem-form .btn {
+  align-self: stretch;
+  cursor: pointer;
+  color: #fff;
+  background: #10b981;
+  border: transparent;
+  border-radius: 0.25rem;
+  letter-spacing: 1px;
+  padding: 0.375rem 0.75rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease-in-out all;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #047857;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.lorem-text {
+  width: 60%;
+}
+
+.lorem-text p {
+  line-height: 2;
+  margin-bottom: 2rem;
+}

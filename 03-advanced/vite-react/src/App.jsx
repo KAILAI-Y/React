@@ -1,8 +1,8 @@
-import Cleanup from './JSX/Cleanup'
+import ControlledInputs from './JSX/ControlledInputs'
 import './App.css'
 
 const App = () => {
-  return <Cleanup />
+  return <ControlledInputs />
 }
 
 export default App

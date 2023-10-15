@@ -30,10 +30,10 @@ const App = () => {
 
   console.log(name)
   return (
-    <div>
+    <main>
       <article className="review">
         <div className="img-container">
-          <img src={image} alt="person-img" />
+          <img src={image} alt={name} className="person-img" />
           <span className="quote-icon">
             <FaQuoteRight />
           </span>
@@ -53,7 +53,7 @@ const App = () => {
           surprise me
         </button>
       </article>
-    </div>
+    </main>
   )
 }
 
