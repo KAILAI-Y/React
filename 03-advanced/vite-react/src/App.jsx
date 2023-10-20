@@ -1,8 +1,8 @@
-import ControlledInputs from './JSX/ControlledInputs'
 import './App.css'
+import Navbar from './JSX/Context/Navbar'
 
 const App = () => {
-  return <ControlledInputs />
+  return <Navbar />
 }
 
 export default App
